@@ -12,71 +12,61 @@
         padding:0;
         overflow-y: scroll;
         overflow-x: hidden;
-        background-image: url("http://www.zema9.com/files/attach/images/1295290/616/339/001/af3901392628e760b9dd7aade7a14105.jpg");
+        background-image: url("http://www.redvanilla.com/images/EW3402%20(3).JPG");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: right 20%;
+        background-position: right bottom;
     }
     table, td {background-color: transparent;}
     
     .headfont{
         font-family: 'Iropke Batang', serif;
-        font-size: 200%;
+        font-size: 20px;
+        font: bold;
         color: rgb(255,255,255);
         vertical-align: middle;
         text-align: center;
-        line-height: 100px;
-        margin-top: 4%;
+        line-height: 35px;
+        margin: 20px auto;
         z-index: 3;
     }
     
     .explain{
         font-family: 'Iropke Batang', serif;
-        font-size: 100%;
-        color: rgb(211, 152 ,92);
+        font-size: 15px;
+        color: rgb(220,165,92);
         vertical-align: middle;
         text-align: center;
-        line-height: 250%;
-        z-index: 3;
+        line-height: 25px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        margin-left: 32.3%;
     }
-    
     .box1{
-        background-color: rgba(240,173,78,0.7);
-        border-radius: 23px;
-        width: 40%;
+        background-color: rgba(220,165,92,0.6);
+        border: 4px solid #fff;
+        width: 60%;
         text-align: center;
-        line-height: 70px;
-        padding: 2%;
-        margin-top: 10%;
-        margin-left: 29.8%;
+        line-height: 35px;
+        padding: 20px;
+        margin: 78px auto;
         z-index: 1;
     }
     
     .box2{
-        background-color: rgba(255,255,255,0.9);
-        border-radius: 23px;
+        background-color: rgba(255,255,255,0.94);
+        border-radius: 30px;
         width: 40%;
         text-align: center;
-        vertical-align: middle;
-        line-height: 250%;
-        padding: 2%;
-        margin-top: 2%;
-        margin-left: 29.8%;
+        line-height: 25px;
+        padding: 15px;
+        margin-top: 15px;
+        margin-left:30%;
         z-index: 1;
     }
     
-    #title-box {
-        font-family: 'Iropke Batang', serif;
-        width: 200px;
-        border: 2px solid #fff;
-        padding: 22px;
-        text-align: center;
-        line-height: 60px;
-        margin-top: 30px;
-        margin-left: 30px;
-        color : rgb(255,255,255);
-      }
+
       
     .index_textbox{
         position: relative;
@@ -86,18 +76,29 @@
         z-index: 2;
     }
     
-    </style>
+    #store_image{
+        background-image:url("<%= @jeongmun_image %>");
+        background-size: cover;
+        border-radius: 60px;
+        margin-top: 3%;
+        margin-left: 29.5%;
+        padding-top: 50px;
+        width: 550px;
+        height: 380px;
+    }
 
+    </style>
 </head>
 
 <body>
-    <div id="index">
-    <div class="headfont box1">당신의 위는 안녕한가요?</div>
-    <div class="explain box2">오전 수업 듣느라 수고 하셨어요</br>특히 9시 수업 통학생들 힘내요. 이해해요.</br>부디 제 몫까지 맛있게 드세요</div>
-
-    <center>
-    <a href = '/game/jeongmun_whats_ur_name'><button type="button" class="btn btn-warning btn-lg" style="margin-top:6%">정문 건너면 지각할지도 몰라요.....부러우면 지는거랬는데.</button></a></br>
-    <a href = '/game/maeul_whats_ur_name'><button type="button" class="btn btn-warning btn-lg" style="margin-top:1%">시간이 없다면 마을을 추천할게요.  대신 맛도 같이 없어요.</button></a></center>
     
+    <div id="store_image">
+        <div class="headfont box1">이제 그만.. 정하시죠? </br>오늘은 그냥 <%= @jeongmun_store %> 드세요</div>
     </div>
+    <div class="explain box2">제 몫까지 꼭꼭 씹어서 맛있게드세요!</br>식사 맛있게 하시고 오늘 하루도 기운차게 보내세요!</br>경희대학교 멋쟁이 사자처럼에서 당신을 응원합니다!</div>
+    
+    <center><a href='#'><button type="button" class="btn btn-outline-warning btn-lg" style="margin: -13% 0.5%">일단 무조건 정문에서 드세요 그냥</button></a>
+    <center><a href='/game/index'><button type="button" class="btn btn-outline-warning btn-middle" style="margin-top:5%">메인으로 돌아가다니 당신..배가 고픈 것 맞나요?</button></a></center>
+   
+    
 </body>
